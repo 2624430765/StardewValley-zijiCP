@@ -1,0 +1,200 @@
+{
+    "Changes": [
+		{
+			"Action": "Load",
+			"FromFile": "assets/Book/Books/sheet.png",
+			"Target": "Mods/{{ModId}}/Books"
+		},
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Lewis_shorts_book",
+			"FromFile": "assets/Book/lewis_shorts_book.png"
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Ore_Catalogue_book",
+			"FromFile": "assets/Book/ore_catalogue.png"
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Dagger_book",
+			"FromFile": "assets/Book/dagger_book.png"
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Milk_book",
+			"FromFile": "assets/Book/milk_book.png"
+        },
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Bomb_book",
+			"FromFile": "assets/Book/bomb_book.png"
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Lewis_shorts": {
+                    "Name": "{{ModId}}_Book_Lewis_shorts",
+                    "DisplayName": "{{i18n: Book.LewisShorts.Name}}",
+                    "Description": "{{i18n: Book.LewisShorts.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Lewis_shorts_book",
+                    "ContextTags": [
+                        "color_purple",
+                        "book_item"
+                    ],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Sketchbook": {
+                    "Name": "{{ModId}}_Book_Sketchbook",
+                    "DisplayName": "{{i18n: Book.CarpenterCatalogue.Name}}",
+                    "Description": "{{i18n: Book.CarpenterCatalogue.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 16,
+					"ContextTags": [
+						"color_green",
+						"book_item",
+						"spu_book_colour"
+					],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Ore_Catalogue": {
+                    "Name": "{{ModId}}_Book_Ore_Catalogue",
+                    "DisplayName": "{{i18n: Book.OreCatalogue.Name}}",
+                    "Description": "{{i18n: Book.OreCatalogue.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Ore_Catalogue_book",
+                    "ContextTags": [
+                        "color_blue",
+                        "book_item"
+                    ],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Rice": {
+                    "Name": "{{ModId}}_Book_Rice",
+                    "DisplayName": "{{i18n: Book.Rice.Name}}",
+                    "Description": "{{i18n: Book.Rice.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"color_cyan",
+						"book_item",
+						"spu_book_colour"
+					],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Dagger": {
+                    "Name": "{{ModId}}_Book_Dagger",
+                    "DisplayName": "{{i18n: Book.Dagger.Name}}",
+                    "Description": "{{i18n: Book.Dagger.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Dagger_book",
+                    "ContextTags": [
+                        "color_gray",
+                        "book_item"
+                    ],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Green_Tea": {
+                    "Name": "{{ModId}}_Book_Green_Tea",
+                    "DisplayName": "{{i18n: Book.GreenTea.Name}}",
+                    "Description": "{{i18n: Book.GreenTea.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"color_dark_purple",
+						"book_item",
+						"spu_book_colour"
+					],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Milk": {
+                    "Name": "{{ModId}}_Book_Milk",
+                    "DisplayName": "{{i18n: Book.Milk.Name}}",
+                    "Description": "{{i18n: Book.Milk.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Milk_book",
+                    "ContextTags": [
+                        "color_blue",
+                        "book_item"
+                    ],
+                },
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Bomb": {
+                    "Name": "{{ModId}}_Book_Bomb",
+                    "DisplayName": "{{i18n: Book.Bomb.Name}}",
+                    "Description": "{{i18n: Book.Bomb.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Bomb_book",
+                    "ContextTags": [
+                        "color_gray",
+                        "book_item"
+                    ],
+                },
+            }
+        },
+    ]
+}

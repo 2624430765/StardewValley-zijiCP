@@ -1,0 +1,676 @@
+{
+    "Changes": [
+	  { // 黑暗护身符熔炉强化（回收机回收虚空吊坠，虚空蛋增加品质见下）
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)114", "OutputRules"],
+      "Entries": {
+		  "VoidEssence": {
+			"Id":"VoidEssence",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)769",
+                    "RequiredTags": null,
+                    "RequiredCount": 50,
+                    "Condition": "PLAYER_HAS_MAIL Current HasDarkTalisman"
+                }
+            ],
+			"OutputItem": [
+			 	{
+                    "Id": "(O)768",
+                    "ItemId": "(O)768",
+                    "MinStack": 50,
+                    "MaxStack": 60
+			    }
+			],
+			"MinutesUntilReady": 60
+		}
+	  }
+	},
+	  { // 回收机
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)20", "OutputRules"],
+	  "Entries": {
+		  "algae": {
+			"Id":"algae",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)157",
+                    "RequiredTags": null,
+                    "RequiredCount": 1,
+                    "Condition": null
+                },
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)152",
+                    "RequiredTags": null, 
+                    "RequiredCount": 1,
+                    "Condition": null
+                },
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)153",
+                    "RequiredTags": null, 
+                    "RequiredCount": 1,
+                    "Condition": null
+                }
+            ],
+			"OutputItem": [
+			 	{
+                    "Id": "seeds",
+                    "ItemId": null,
+					"Condition": "RANDOM 0.1",
+					"RandomItemId": ["(O)347", "(O)499", "(O)770", "(O)MixedFlowerSeeds", "(O)770", "(O)MixedFlowerSeeds" ],
+			    },
+			 	{
+                    "Id": "plant",
+                    "ItemId": null,
+					"RandomItemId": ["(O)747", "(O)748" ],
+                    "MinStack": 1,
+                    "MaxStack": 2,
+					"StackModifiers": [
+					 {
+						"Id": "AddQuality",
+						"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+						"Modification": "Add",
+						"Amount": 1.0,
+						"RandomAmount": null
+					 }
+					]
+			    }
+			],
+			"MinutesUntilReady": 120
+		},
+        "junkplant": {
+			"Id":"junkplant",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)747",
+                    "RequiredTags": null,
+                    "RequiredCount": 1,
+                    "Condition": null
+                },
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)748",
+                    "RequiredTags": null, 
+                    "RequiredCount": 1,
+                    "Condition": null
+                }
+            ],
+			"OutputItem": [
+			 	{
+                    "Id": "(O)771",
+                    "ItemId": "(O)771",
+					"Condition": "RANDOM 0.3",
+                    "MinStack": 3,
+                    "MaxStack": 7
+			    },
+			 	{
+                    "Id": "(O)684",
+                    "ItemId": "(O)684",
+                    "MinStack": 2,
+                    "MaxStack": 3
+			    },
+			 	{
+                    "Id": "(O)Moss",
+                    "ItemId": "(O)Moss",
+                    "MinStack": 2,
+                    "MaxStack": 4
+			    }
+			],
+			"MinutesUntilReady": 60
+		},
+        "autopetter": {
+			"Id":"autopetter",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(BC)272",
+                    "RequiredTags": null,
+                    "RequiredCount": 1,
+                    "Condition": null
+                }
+            ],
+			"OutputItem": [
+			 	{
+					"Condition": null,
+                    "Id": "(O)446",
+                    "ItemId": "(O)446",
+					"QualityModifiers": [
+					{
+						"Modification": "set",
+						"RandomAmount": [1,2,4,2,1,0] 
+					}
+					]
+			    }
+			],
+			"MinutesUntilReady": 60
+		},
+        "Void": {
+			"Id":"Void",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "(O)808",
+                    "RequiredTags": null,
+                    "RequiredCount": 1,
+                    "Condition": "PLAYER_HAS_MAIL Current HasDarkTalisman"
+                }
+            ],
+			"OutputItem": [
+			 	{
+					"Condition": "RANDOM .3",
+                    "Id": "(O)909",
+                    "ItemId": "(O)909",
+                    "MinStack": 5,
+                    "MaxStack": 7
+			    },
+			 	{
+					"Condition": "RANDOM .6",
+                    "Id": "(O)386",
+                    "ItemId": "(O)386",
+                    "MinStack": 21,
+                    "MaxStack": 25
+			    },
+			 	{
+                    "Id": "(O)857",
+					"RandomItemId": ["(O)857", "(O)279", "(O)166" ],
+			    }
+			],
+			"MinutesUntilReady": 60
+		}
+	  }
+	},
+	{ // 熔炉
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)13", "OutputRules", "Default_RadioactiveOre" ],
+	  "Entries": {
+			"MinutesUntilReady": 780
+		  }
+	},
+	{ // 重型熔炉
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_RadioactiveOre" ],
+	  "Entries": {
+			"MinutesUntilReady": 780
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace" ],
+	  "Entries": {
+			"AllowFairyDust": false,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_RadioactiveOre", "OutputItem", "(O)910" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_IridiumOre", "OutputItem", "(O)337" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_GoldOre", "OutputItem", "(O)336" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_IronOre", "OutputItem", "(O)335" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_CopperOre", "OutputItem", "(O)334" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_Quartz", "OutputItem", "(O)338" ],
+	  "Entries": {
+			"MaxStack": 5,
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)HeavyFurnace", "OutputRules", "Default_FireQuartz", "OutputItem", "(O)338" ],
+	  "Entries": {
+			"MaxStack": 15,
+		  }
+	},
+	{ // 碎骨机
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)90", "OutputRules", "Default", "OutputItem", "(O)465" ],
+	  "Entries": {
+			"ItemId": "(O)466",
+			"MinStack": 5
+		  }
+	},
+	{
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)90", "OutputRules", "Default", "Triggers" ],
+	  "Entries": {
+			"ItemPlacedInMachine_Default": null
+		  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)90" ],
+	  "Entries": {
+          "ReadyTimeModifiers":[
+              {
+            	"Id": "TimeMultiply",
+            	"Modification": "Multiply",
+            	"Amount": 2,
+            	"RandomAmount": null
+              }
+            ]
+	  }
+	},
+	{ // More Cloth
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)17", "OutputRules", "Default", "OutputItem", "(O)428" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  },
+		  {
+			"Id": "Multiply",
+			"Condition": "PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // 织布机时间增加
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)17", "OutputRules", "Default"],
+	  "Entries": {
+        "MinutesUntilReady": 300
+	  }
+	},
+	{ 
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)17" ],
+	  "Entries": {
+          "ReadyTimeModifiers":[
+              {
+            	"Id": "TimeMultiply",
+            	"Condition": "PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+            	"Modification": "Multiply",
+            	"Amount": 2,
+            	"RandomAmount": null
+              }
+            ]
+	  }
+	},
+	{ // More Goat Milk
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)16", "OutputRules", "Default_GoatMilk", "OutputItem", "(O)426" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Large Goat Milk
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)16", "OutputRules", "Default_LargeGoatMilk", "OutputItem", "(O)426" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Milk
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)16", "OutputRules", "Default_Milk", "OutputItem", "(O)424" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Large Milk
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)16", "OutputRules", "Default_LargeMilk", "OutputItem", "(O)424" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Duck Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_DuckEgg", "OutputItem", "(O)307" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Void Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_VoidEgg", "OutputItem", "(O)308" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		],
+        "QualityModifiers": [
+        	{
+        	"Id": "HasDarkTalismanQuality",
+        	"Condition": "PLAYER_HAS_MAIL Current HasDarkTalisman",
+        	"Modification": "set",
+			"RandomAmount": [0,1,2,4] 
+          }
+        ]
+	  }
+	},
+	{ // More Dinosaur Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_DinosaurEgg", "OutputItem", "(O)807" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Add",
+			"Amount": 1.0,
+			"RandomAmount": null
+		  },
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "PLAYER_STAT Current Book_Artifact 1, RANDOM 0.5",
+			"Modification": "Add",
+			"Amount": 1.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Golden Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_GoldenEgg", "OutputItem", "(O)306" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "set",
+			"Amount": 5.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Large Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_LargeEgg", "OutputItem", "(O)306" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Egg
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)24", "OutputRules", "Default_Egg", "OutputItem", "(O)306" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Corn Oil
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)19", "OutputRules", "Default_Corn", "OutputItem", "(O)247" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Sunflower Oil
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)19", "OutputRules", "Default_Sunflower", "OutputItem", "(O)247" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Truffle Oil
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)19", "OutputRules", "Default_Truffle", "OutputItem", "(O)432" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2.0,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Bait Maker
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)BaitMaker", "OutputRules", "Default", "OutputItem", "FLAVORED_ITEM Bait DROP_IN_ID" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "AddQuality",
+			"Condition": "ITEM_QUALITY Input 1 1",
+			"Modification": "Add",
+			"RandomAmount": [1,2,3] 
+		  },
+		  {
+			"Id": "AddQuality",
+			"Condition": "ITEM_QUALITY Input 2 2",
+			"Modification": "Add",
+			"RandomAmount": [3,4,4,5] 
+		  },
+		  {
+			"Id": "AddQuality",
+			"Condition": "ITEM_QUALITY Input 4 4",
+			"Modification": "Add",
+			"RandomAmount": [5,6,7,8] 
+		  },
+		]
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "Raisins", "OutputItem", "(O)Raisins" ],
+	  "Entries": {
+		"StackModifiers": [
+		  {
+			"Id": "DoubleQuality",
+			"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.225\" \"ITEM_QUALITY Input 2 2, RANDOM 0.45\" \"ITEM_QUALITY Input 4 4, RANDOM 0.9\"",
+			"Modification": "Multiply",
+			"Amount": 2,
+			"RandomAmount": null
+		  }
+		]
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "Raisins", "Triggers", "ItemPlacedInMachine" ],
+	  "Entries": {
+		"RequiredCount": 7
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedFruit", "OutputItem", "FLAVORED_ITEM DriedFruit DROP_IN_ID" ],
+	  "Entries": {
+		"CopyQuality": true
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedFruit", "Triggers", "ItemPlacedInMachine" ],
+	  "Entries": {
+		"RequiredCount": 7
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedMushrooms", "OutputItem", "FLAVORED_ITEM DriedMushroom DROP_IN_ID" ],
+	  "Entries": {
+		"CopyQuality": true
+	  }
+	},
+	{ // More Dehydrator
+	  "Action": "EditData",
+	  "Target": "Data/Machines",
+	  "TargetField": [ "(BC)Dehydrator", "OutputRules", "DriedMushrooms", "Triggers", "ItemPlacedInMachine" ],
+	  "Entries": {
+		"RequiredCount": 7
+	  }
+	},
+	{
+        "Action":"EditData",
+        "Target":"Data/Machines",
+        "TargetField":["(BC)Dehydrator","OutputRules","DriedMushrooms","Triggers"],
+        "Entries":{
+            "InedibleMushroomPlacedInMachine": {
+                "Id": "InedibleMushroomPlacedInMachine",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)420",
+                "RequiredCount": 7
+            }
+	  }
+	}
+    ]
+}

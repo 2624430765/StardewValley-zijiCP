@@ -1,0 +1,405 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_LongJar": "(BC)15 6 910 1 787 5/Home/{{ModId}}_LongJar/true/"
+      },
+      "LogName": "Long jar recipe definition"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_LongJar": {
+          "Name": "{{ModId}}_LongJar",
+          "DisplayName": "{{i18n: longJar.name}}",
+          "Description": "{{i18n: longJar.description}}",
+          "Price": 125,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": true,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "Mods\\{{ModId}}\\Craftables",
+          "SpriteIndex": 1,
+          "ContextTags": null,
+          "CustomFields": null
+        }
+      },
+      "LogName": "Long jar BC definition"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_LongJar": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            {
+              "Id": "Default_SturgeonRoe",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)812",
+				  "RequiredTags": [
+                    "preserve_sheet_index_698"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)445",
+                  "ItemId": "(O)445",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 4500,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Roe",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)812",
+				  "RequiredTags": [
+                    "!preserve_sheet_index_698"
+                  ],
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "FLAVORED_ITEM AgedRoe DROP_IN_ID DROP_IN_PRESERVE",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 1,
+                  "MaxStack": 1,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 570,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Pickled",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine_Vegetable",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_vegetable"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Forage",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_greens"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": "ITEM_EDIBILITY Input 1"
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Pickle",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "preserves_pickle"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "FLAVORED_ITEM Pickle DROP_IN_ID",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "set",
+                	"Amount": 0.0,
+                	"RandomAmount":[
+                          6.0,
+                          6.0,
+                          6.0,
+                          7.0
+                        ]
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "set",
+                	"Amount": 0.0,
+                	"RandomAmount":[
+                          7.0,
+                          8.0
+                        ]
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 3160,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Jelly",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine_Fruit",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_fruits"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Jelly",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "preserves_jelly"
+                  ],
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "FLAVORED_ITEM Jelly DROP_IN_ID",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "set",
+                	"Amount": 0.0,
+                	"RandomAmount":[
+                          6.0,
+                          6.0,
+                          6.0,
+                          7.0
+                        ]
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "set",
+                	"Amount": 0.0,
+                	"RandomAmount":[
+                          7.0,
+                          8.0
+                        ]
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 3160,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            }
+          ],
+          "AdditionalConsumedItems": null,
+          "PreventTimePass": null,
+          "ReadyTimeModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+          "ReadyTimeModifierMode": "Stack",
+          "InvalidItemMessage": null,
+          "InvalidItemMessageCondition": null,
+          "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "Ship",
+                  "Delay": 0
+                }
+              ]
+            }
+          ],
+          "WorkingEffectChance": 0.33,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": null,
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": false,
+          "IsIncubator": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": [
+            {
+              "RequiredItemId": null,
+              "RequiredTags": null,
+              "StatName": "PreservesMade"
+            }
+          ],
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      },
+      "LogName": "Long jar machine definition"
+    }
+  ]
+}

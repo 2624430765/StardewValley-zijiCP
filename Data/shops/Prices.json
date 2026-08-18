@@ -1,0 +1,314 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Marnie 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Marnie 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5,
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Clint 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Clint 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Carpenter"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Robin 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Robin 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Dwarf 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Dwarf 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["FishShop"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Willy 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Willy 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Hospital"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Harvey 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Harvey 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["IceCreamStand"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Alex 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Alex 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ResortBar"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Gus 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Gus 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Saloon"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Gus 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Gus 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Sandy 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Sandy 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["SeedShop"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Pierre 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Pierre 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["ShadowShop"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.5
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.2,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Krobus 1500"
+                    },
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 1.0,
+                        "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1 ,PLAYER_FRIENDSHIP_POINTS Current Krobus 2250"
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Joja"],
+            "Entries": {
+                "PriceModifiers": [
+                    {
+                        "Id": "NonMemberMarkup",
+                        "Condition": "!PLAYER_HAS_MAIL Current JojaMember",
+                        "Modification": "Multiply",
+                        "Amount": 1.25
+                    },
+                    {
+                        "Id": "HaveMemberMarkup",
+                        "Condition": "PLAYER_HAS_MAIL Current JojaMember",
+                        "Modification": "Multiply",
+                        "Amount": 1.05
+                    }
+                ],
+                "PriceModifierMode": "Minimum"
+            }
+        }
+    ]
+}

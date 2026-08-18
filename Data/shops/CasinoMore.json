@@ -1,0 +1,160 @@
+{
+   "Changes": [
+ 
+			//Hero Trophy
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.PHOU_StardewHeroTrophy": {
+            "Id": "bennoloth.PHOU_StardewHeroTrophy",
+            "ItemId": "(BC)116",
+            "Price": 100000,
+			"AvailableStock": 1,
+			"AvailableStockLimit": 1
+             }, 
+        },
+		"When": {
+				"IsJojaMartComplete": "true"
+				}
+	},
+	
+			//Soda Machine
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			"bennoloth.NMM_SodaMachine": {
+            "Id": "bennoloth.NMM_SodaMachine",
+            "ItemId": "(BC)117",
+            "Price": 100000,
+			"AvailableStock": 1,
+			"AvailableStockLimit": 1
+             }, 
+        },
+		"When": {
+				"IsCommunityCenterComplete": "true"
+				}
+	},	
+	
+			//Penny 14-Heart
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			//Fruit Salad Rug
+			"bennoloth.NMM_FruitSaladRug": {
+            "Id": "bennoloth.NMM_FruitSaladRug",
+            "ItemId": "(F)1909",
+            "Price": 2500
+             },
+			//Pirate Rug
+			"bennoloth.NMM_FruitSaladRug": {
+            "Id": "bennoloth.NMM_FruitSaladRug",
+            "ItemId": "(F)1902",
+            "Price": 2500
+             }, 	
+			//Strawberry Double Bed
+			"bennoloth.NMM_StrawberryDoubleBed": {
+            "Id": "bennoloth.NMM_StrawberryDoubleBed",
+            "ItemId": "(F)2064",
+            "Price": 2500
+             }, 
+			 //Pirate Double Bed
+			"bennoloth.NMM_PirateDoubleBed": {
+            "Id": "bennoloth.NMM_PirateDoubleBed",
+            "ItemId": "(F)2070",
+            "Price": 2500
+             }, 
+			 //Starry Double Bed
+			"bennoloth.NMM_StarryDoubleBed": {
+            "Id": "bennoloth.NMM_StarryDoubleBed",
+            "ItemId": "(F)2058",
+            "Price": 2500
+             }, 
+        },		
+		"When": {
+				"HasSeenEvent": "4324303"
+				}
+	},
+	
+
+	//Beach Painting
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Boat": {
+            "Id": "bennoloth.NMM_Boat",
+            "ItemId": "(F)2421",
+            "Price": 2500
+             }, 
+        },
+	},
+	
+	//Museum Rewards
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			 //A Night On Eco-Hill
+			"bennoloth.NMM_NightEcoHil": {
+            "Id": "bennoloth.NMM_NightEcoHill",
+            "ItemId": "(F)1541",
+            "Price": 2500
+             }, 
+			 //Jade Hills
+			"bennoloth.NMM_JadeHills": {
+            "Id": "bennoloth.NMM_JadeHills",
+            "ItemId": "(F)1554",
+            "Price": 2500
+             }, 
+			 //Standing Geode
+			"bennoloth.NMM_StandingGeode": {
+            "Id": "bennoloth.NMM_StandingGeode",
+            "ItemId": "(F)1298",
+            "Price": 2500
+             }, 
+			 //Singing Stone
+			"bennoloth.NMM_SingingStone": {
+            "Id": "bennoloth.NMM_SingingStone",
+            "ItemId": "(F)1300",
+            "Price": 2500
+             }, 
+			 //Obsidian Vase
+			"bennoloth.NMM_ObsidianVase": {
+            "Id": "bennoloth.NMM_ObsidianVase",
+            "ItemId": "(F)1299",
+            "Price": 2500
+             }, 
+			 //Skeleton Statue
+			"bennoloth.NMM_SkeletonStatue": {
+            "Id": "bennoloth.NMM_SkeletonStatue",
+            "ItemId": "(F)1304",
+            "Price": 2500
+             }, 
+			 //Chicken Statue
+			"bennoloth.NMM_ChickenStatue": {
+            "Id": "bennoloth.NMM_ChickenStatue",
+            "ItemId": "(F)1305",
+            "Price": 2500
+             },
+			//Bear Statue
+			"bennoloth.NMM_BearStatue": {
+            "Id": "bennoloth.NMM_BearStatue",
+            "ItemId": "(F)1671",
+            "Price": 2500
+             }, 			 
+        },
+		"When": {
+				"HasFlag": "museumComplete"
+				}
+	}
+
+	]
+}

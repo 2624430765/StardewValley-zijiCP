@@ -1,0 +1,1309 @@
+{
+    "Changes": [
+		// 矿石熔炼获得在博物馆，巨大植物在怪物杀手，原版价格目录和动物目录修改 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"(O)Book_PriceCatalogue": {
+					"Id": "(O)Book_PriceCatalogue",
+                    "ItemId": "(O)Book_PriceCatalogue",
+					"Condition": "!PLAYER_STAT Current Book_PriceCatalogue 1",
+					"AvailableStock": 1,
+					"TradeItemId": "(O)166",
+					"TradeItemAmount": 1,
+					"Price": 0
+				},
+				"{{ModId}}_Book_Milk": {
+					"Id": "(O){{ModId}}_Book_Milk",
+                    "ItemId": "(O){{ModId}}_Book_Milk",
+					"Condition": "!PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+					"AvailableStock": 1,
+					"TradeItemId": "(O)797",
+					"TradeItemAmount": 1,
+					"Price": 0
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "AnimalShop", "Items" ],
+			"Fields": {
+				"(O)Book_AnimalCatalogue": {
+					"Id": "(O)Book_AnimalCatalogue",
+                    "ItemId": "(O)Book_AnimalCatalogue",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Marnie 2000,!PLAYER_STAT Current Book_AnimalCatalogue 1",
+				}
+			}
+		},
+		// 远古斑点额外掉落 解锁采石场后增加放射性矿石 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "Default", "ArtifactSpots" ],
+			"Entries": {
+				"{{ModId}}_Sketchbook": {
+					"Id": "{{ModId}}_Sketchbook",
+					"Chance": 0.05,
+					"Condition": "!PLAYER_STAT Current {{ModId}}_Book_Carpenter_Catalogue 1",
+					"ItemId": "(O){{ModId}}_Book_Carpenter_Catalogue"
+				},
+				"{{ModId}}_SketchbookDrops": {
+					"Id": "{{ModId}}_SketchbookDrops",
+					"Chance": 0.05,
+					"ContinueOnDrop": true,
+					"Condition": "PLAYER_STAT Current {{ModId}}_Book_Carpenter_Catalogue 1",
+					"RandomItemId": ["(O)872", "(O)386", "(O)74", "(O)386"],
+					"StackModifiers":[
+					  {
+						"Id": "DoubleQuality",
+						"Condition": "ITEM_ID Target (O)909",
+						"Modification": "set",
+						"RandomAmount": [ 2.0, 3.0, 3.0]
+					  },
+					  {
+						"Id": "DoubleQuality",
+						"Condition": "ITEM_ID Target (O)386",
+						"Modification": "set",
+						"RandomAmount": [ 3.0, 4.0, 4.0, 5.0]
+					  }
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "Default", "ArtifactSpots", "{{ModId}}_SketchbookDrops", "RandomItemId" ],
+			"Entries": {
+				"(O)909": "(O)909"
+			},
+			"When": {
+				"HasFlag": "ccCraftsRoom"
+			}
+		},
+		// 矿石   //
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)114", "OutputRules" ],
+            "Entries": {
+                "IridiumOre": {
+					"Id":"IridiumOre",
+                    "Triggers": [
+                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)378",
+                            "RequiredTags": null,
+                            "RequiredCount": 50,
+                            "Condition": "PLAYER_STAT Current {{ModId}}_Book_Ore_Catalogue 1"
+                        },
+                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)380",
+                            "RequiredTags": null,
+                            "RequiredCount": 25,
+                            "Condition": "PLAYER_STAT Current {{ModId}}_Book_Ore_Catalogue 1"
+                        },
+						                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)384",
+                            "RequiredTags": null,
+                            "RequiredCount": 10,
+                            "Condition": "PLAYER_STAT Current {{ModId}}_Book_Ore_Catalogue 1"
+                        }
+                    ],
+					"OutputItem": [
+					 	{
+							"Condition": "RANDOM 0.1",
+                            "Id": "(O)909",
+                            "ItemId": "(O)909"
+ 					    },
+ 					    {
+							"Condition": null,
+                            "Id": "(O)386",
+                            "ItemId": "(O)386",
+                            "MinStack": 2,
+                            "MaxStack": 2
+ 					    }
+ 					],
+					"MinutesUntilReady": 300
+                }
+            }
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+            "Entries": {
+                "IridiumOre2": {
+					"Id":"IridiumOre2",
+                    "Triggers": [
+                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": null,
+                            "RequiredTags": [
+                              "category_junk",
+                              "!id_o_167"
+                            ], 
+                            "RequiredCount": 1,
+							"Condition": "RANDOM 0.05, PLAYER_STAT Current {{ModId}}_Book_Ore_Catalogue 1",
+                        }
+                    ],
+					"OutputItem": [
+					 	{
+							"Condition": null,
+                            "Id": "(O)909",
+                            "ItemId": "(O)909"
+ 					    }
+ 					],
+					"MinutesUntilReady": 120
+				}
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)20", "OutputRules" ],
+			"MoveEntries": [
+                { "ID": "IridiumOre2", "BeforeID": "Default_Trash" } 
+            ]
+        },
+		// 鱼王标志 //
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+ 			  "{{ModId}}_LegendaryFishMail": {
+  			    "Id": "{{ModId}}_LegendaryFishMail",
+  			    "Trigger": "DayEnding",
+  			    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)682, PLAYER_HAS_CAUGHT_FISH Current (O)159, PLAYER_HAS_CAUGHT_FISH Current (O)160, PLAYER_HAS_CAUGHT_FISH Current (O)163, PLAYER_HAS_CAUGHT_FISH Current (O)775",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": true,
+                "Action": "AddMail Current {{ModId}}_LegendaryFishMail received",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+ 			  }
+			}
+        },
+		// 鱼王养殖 //（基础生产率 0.5，获得全部鱼王为0.7 ）
+		{
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"TargetField": [ "LegendaryFish", "ProducedItems" ],
+			"Entries": {
+			"Legendarybook":{
+			    "Condition": "!PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1, RANDOM .05",
+                "Precedence": 100,
+			    "Id": "Legendbook",
+			    "ItemId": "(O){{ModId}}_Book_Lewis_shorts",
+			    "Quality": -1
+			  }
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"Fields": {
+				"LegendaryFish":{
+				    "BaseMinProduceChance": 0.7,
+					"BaseMaxProduceChance": 0.7
+				}
+			},
+			"When": {
+				"HasFlag": "{{ModId}}_LegendaryFishMail"
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/FishPondData",
+			"TargetField": [ "LegendaryFish", "ProducedItems" ],
+			"Entries": {
+			  "Legendmore": {
+			    "Condition": "ITEM_ID Input (O)163, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+				"Chance": 0.6,
+			    "Id": "Legendmore",
+				"Precedence": 100,
+			    "ItemId": "(O)74",
+			    "Quality": -1
+			   },
+			  "Crimsonfishmore": {
+			    "Condition": "ITEM_ID Input (O)159, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+			    "Id": "Crimsonfishmore",
+                "Precedence": 100,
+			    "ItemId": "(O)347",
+			    "Quality": -1
+			   },
+			  "Anglermore": {
+			    "Condition": "ITEM_ID Input (O)160, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+			    "Id": "Anglermore",
+				"Precedence": 100,
+			    "ItemId": "(O)787",
+				"MinStack": 1,
+        		"MaxStack": 2,
+			    "Quality": -1
+			   },
+			  "Glacierfishmore": {
+			    "Condition": "ITEM_ID Input (O)775, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+			    "Id": "Glacierfishmore",
+				"Precedence": 100,
+			    "ItemId": "(O)MysteryBox",
+				"MinStack": 1,
+        		"MaxStack": 2,
+			    "Quality": -1
+			   },
+			  "Mutantmore": {
+			    "Condition": "ITEM_ID Input (O)682, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+			    "Id": "Mutantmore",
+				"Precedence": 100,
+			    "ItemId": "(O)909",
+				"MinStack": 1,
+        		"MaxStack": 3,
+			    "Quality": -1
+			   },
+			  "Legend2more": {
+			    "Condition": "ITEM_ID Input (O)898 (O)899 (O)900 (O)901 (O)902, PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+			    "Id": "Legend2more",
+				"Precedence": 100,
+        		"RandomItemId": [
+    			  "(O)749",
+    			  "(O)SeaJelly",
+				  "(O)RiverJelly",
+				  "(O)CaveJelly",
+				  "(O)394",
+				  "(O)60",
+				  "(O)64"
+				 ],
+			    "Quality": -1
+			   }
+			}
+        },
+		// 更好的动物制品（羊毛产出强化见Machines）	//
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_LargeGoatMilk", "OutputItem", "(O)426" ],
+			"Entries": {
+                "QualityModifiers": [
+                	{
+                	"Id": "DoubleQuality",
+                	"Condition": "RANDOM 0.5, PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+                	"Modification": "Multiply",
+                	"Amount": 2.0,
+                	"RandomAmount": null
+                  }
+                ]
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Default_LargeMilk", "OutputItem", "(O)424" ],
+			"Entries": {
+                "QualityModifiers": [
+                	{
+                	"Id": "DoubleQuality",
+                	"Condition": "RANDOM 0.5, PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+                	"Modification": "Multiply",
+                	"Amount": 2.0,
+                	"RandomAmount": null
+                  }
+                ]
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Default_LargeEgg", "OutputItem", "(O)306" ],
+			"Entries": {
+                "QualityModifiers": [
+                	{
+                	"Id": "DoubleQuality",
+                	"Condition": "RANDOM 0.5, PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+                	"Modification": "Multiply",
+                	"Amount": 2.0,
+                	"RandomAmount": null
+                  }
+                ]
+			}
+        },
+		// 金色椰子  //
+		{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": [ "791", "GeodeDrops" ],
+            "Entries": {
+			  "GoldenCoconutbook": {
+               "Chance": 0.1,
+               "SetFlagOnPickup": null,
+               "Precedence": -1000,
+               "Condition": "!PLAYER_STAT Current {{ModId}}_Book_Dagger 1",
+               "Id": "GoldenCoconutbook",
+               "ItemId": "(O){{ModId}}_Book_Dagger"
+			  }
+			}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": [ "791", "GeodeDrops" ],
+            "Entries": {
+			 "GoldenCoconutup": {
+              "Chance": 0.8,
+              "SetFlagOnPickup": null,
+              "Precedence": -1000,
+              "Condition": "PLAYER_STAT Current {{ModId}}_Book_Dagger 1",
+              "Id":  "GoldenCoconutbookup",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)386",
+                "(O)909",
+                "(O)919",
+                "(O)920",
+                "(O)797",
+                "(O)373",
+                "(O)74",
+                "(O)275",
+                "(O)MysticSyrup"
+              ],
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ObjectColor": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": [
+                {
+                  "Id": "PineappleSeeds",
+                  "Condition": "ITEM_ID Target (O)919",
+                  "Modification": "Set",
+                  "RandomAmount":   [ 3.0, 4.0, 4.0]
+                },
+                {
+                  "Id": "TaroTuber",
+                  "Condition": "ITEM_ID Target (O)920",
+                  "Modification": "Set",
+                  "RandomAmount":   [ 2.0, 2.0, 3.0]
+                },
+                {
+                  "Id": "IridiumOre",
+                  "Condition": "ITEM_ID Target (O)386",
+                  "Modification": "Set",
+                  "RandomAmount":  [ 7.0, 8.0, 9.0]
+                },
+                {
+                  "Id": "IridiumOre",
+                  "Condition": "ITEM_ID Target (O)909",
+                  "Modification": "Set",
+                  "RandomAmount":  [ 2.0, 3.0, 3.0]
+                },
+              ],
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+			  }
+            }
+        },
+		// 平衡的运气  //
+		{
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+			 "{{ModId}}_luckbuff": {
+			  "DisplayName": "{{i18n: Power.GreenTea.Name}}",
+    		  "Duration": -2,
+    		  "IconTexture": "TileSheets\\BuffsIcons",
+    		  "IconSpriteIndex": 4,
+    		  "Effects": {
+        		"LuckLevel": 1.0
+			  },
+    		  "ActionsOnApply": null,
+    		  "CustomFields": null
+			 }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "{{ModId}}_luckbuff": {
+                "Id": "{{ModId}}_luckbuff",
+                "Trigger": "Daystarted",
+                "Condition": "PLAYER_STAT Current {{ModId}}_Book_Green_Tea 1, !PLAYER_HAS_MAIL Current HasSpecialCharm, Any \"!SYNCED_RANDOM day luckday 0.1 @addDailyLuck, SYNCED_RANDOM day luckday 0.12\" \"!SYNCED_RANDOM day luckday 0.3 @addDailyLuck, SYNCED_RANDOM day luckday 0.32\" \"!SYNCED_RANDOM day luckday 0.5 @addDailyLuck, SYNCED_RANDOM day luckday 0.52\" \"!SYNCED_RANDOM day luckday 0.7 @addDailyLuck, SYNCED_RANDOM day luckday 0.72\" \"!SYNCED_RANDOM day luckday 0.9 @addDailyLuck, SYNCED_RANDOM day luckday 0.92\"",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_luckbuff -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+			  "{{ModId}}_luckbuff2": {
+                "Id": "{{ModId}}_luckbuff2",
+                "Trigger": "Daystarted",
+                "Condition": "PLAYER_STAT Current {{ModId}}_Book_Green_Tea 1, PLAYER_HAS_MAIL Current HasSpecialCharm, Any \"!SYNCED_RANDOM day luckday 0.1 @addDailyLuck, SYNCED_RANDOM day luckday 0.15\" \"!SYNCED_RANDOM day luckday 0.3 @addDailyLuck, SYNCED_RANDOM day luckday 0.35\" \"!SYNCED_RANDOM day luckday 0.5 @addDailyLuck, SYNCED_RANDOM day luckday 0.55\" \"!SYNCED_RANDOM day luckday 0.7 @addDailyLuck, SYNCED_RANDOM day luckday 0.75\" \"!SYNCED_RANDOM day luckday 0.9 @addDailyLuck, SYNCED_RANDOM day luckday 0.95\"",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_luckbuff -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			 }
+            }
+        },
+		// 钓鱼垃圾增加齐钻  //
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Default", "Fish" ],
+            "Fields":{
+               "(O)167|(O)168|(O)169|(O)170|(O)171|(O)172": {
+                "Id": "(O)167|(O)168|(O)169|(O)170|(O)171|(O)172",
+				"Condition": "!PLAYER_STAT Current {{ModId}}_Book_Rice 1",
+				"RandomItemId": [
+  				  "(O)167",
+                  "(O)168",
+                  "(O)169",
+                  "(O)170",
+                  "(O)171",
+                  "(O)172",
+                  "(O){{ModId}}_Book_Rice"
+                ]
+	        	}
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Default", "Fish" ],
+            "Entries":{
+               "(O)858": {
+				"Chance": 1.0,
+				"IsBossFish": false,
+                "SetFlagOnCatch": null,
+				"Precedence": 2000,
+				"IgnoreFishDataRequirements": false,
+                "ChanceBoostPerLuckLevel": 0.0,
+                "UseFishCaughtSeededRandom": false,
+                "Id": "(O)858",
+                "ItemId": null,
+				"Condition": "PLAYER_STAT Current {{ModId}}_Book_Rice 1",
+                "RandomItemId": [
+  				  "(O)167",
+                  "(O)168",
+                  "(O)169",
+                  "(O)170",
+                  "(O)171",
+                  "(O)172",
+                  "(O)858"
+                ]
+	        	}
+            }
+        },
+		// 垃圾桶更好的物品  //
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+	        "TargetField": [ "BeforeAll" ],			
+            "Entries": {
+				"GarbageBook2":{ 
+				  "IgnoreBaseChance": true,
+    			  "IsMegaSuccess": false,
+    			  "IsDoubleMegaSuccess": true,
+    			  "AddToInventoryDirectly": true,
+    			  "CreateMultipleDebris": false,
+    			  "Condition": "PLAYER_STAT Current Book_Trash 1, !PLAYER_STAT Current {{ModId}}_Book_Bomb 1, RANDOM .05",
+    			  "Id": "GarbageBook2",
+    			  "ItemId": "(O){{ModId}}_Book_Bomb",
+    			  "RandomItemId": null,
+    			  "MaxItems": null,
+    			  "MinStack": -1,
+    			  "MaxStack": -1,
+    			  "Quality": -1,
+    			  "ObjectInternalName": null,
+    			  "ObjectDisplayName": null,
+    			  "ObjectColor": null,
+    			  "ToolUpgradeLevel": -1,
+    			  "IsRecipe": false,
+    			  "StackModifiers": null,
+    			  "StackModifierMode": "Stack",
+     			  "QualityModifiers": null,
+    			  "QualityModifierMode": "Stack",
+     			  "ModData": null,
+     			  "PerItemCondition": null
+				}
+            }
+        },		
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+	        "TargetField": [ "AfterAll", "Base_MegaSuccessFallback" ],		
+            "Entries": {
+				"Condition": "PLAYER_STAT Current trashCansChecked 20, RANDOM .01, !PLAYER_STAT Current {{ModId}}_Book_Bomb 1"
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+	        "TargetField": [ "AfterAll", "Base_Fallback" ],		
+            "Entries": {
+				"Condition": "!PLAYER_STAT Current {{ModId}}_Book_Bomb 1",
+            }
+        },		
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+	        "TargetField": [ "AfterAll" ],		
+            "Entries": {
+				"Base_MegaSuccessFallback2": {
+				 "IgnoreBaseChance": true,
+    			 "IsMegaSuccess": true,
+        		 "IsDoubleMegaSuccess": false,
+        		 "Condition": "PLAYER_STAT Current trashCansChecked 20, RANDOM .01, PLAYER_STAT Current {{ModId}}_Book_Bomb 1",
+        		 "Id": "Base_MegaSuccessFallback2",
+        		 "RandomItemId": [
+    			  "(O)72",
+    			  "(O)749",
+    			  "(O)909",
+    			  "(O)725",
+    			  "(O)724",
+    			  "(O)726",
+    			  "RANDOM_BASE_SEASON_ITEM"
+				 ]
+				},
+				"Base_Fallback2": {
+				 "IgnoreBaseChance": false,
+				 "IsMegaSuccess": false,
+				 "IsDoubleMegaSuccess": false,
+				 "Condition": "PLAYER_STAT Current {{ModId}}_Book_Bomb 1",
+				 "Id": "Base_Fallback2",
+				 "RandomItemId": [
+    		      "(O)72",
+    		      "(O)749",
+    		      "(O)909",
+    		      "(O)725",
+    		      "(O)724",
+    		      "(O)726",
+     		      "RANDOM_BASE_SEASON_ITEM",
+    		      "(O)168",
+     		      "(O)167",
+    		      "(O)170",
+    		      "(O)171",
+    		      "(O)172"
+				 ]
+				}
+			}
+		},
+		// 移动速度   //
+		{
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+			 "{{ModId}}_Speedbuff": {
+			  "DisplayName": "{{i18n: Power.speed.Name}}",
+    		  "Duration": -2,
+    		  "IconTexture": "TileSheets\\BuffsIcons",
+    		  "IconSpriteIndex": 9,
+    		  "Effects": {
+        		"Speed": 0.8
+			  },
+    		  "ActionsOnApply": null,
+    		  "CustomFields": null
+			 }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "{{ModId}}_Speedbuff": {
+                "Id": "{{ModId}}_Speedbuff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_STAT Current Book_Speed2 1, PLAYER_STAT Current Book_Defense 1, PLAYER_STAT Current Book_Bombs 1, PLAYER_STAT Current Book_Marlon 1",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_Speedbuff 5000",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  }
+            }
+        },
+		// 森林魔法强化  //
+		{
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+			 "{{ModId}}_ForestMagic": {
+			  "DisplayName": "[LocalizedText Strings\\1_6_Strings:ForestMagic]",
+    		  "Duration": -2,
+			  "IconTexture": "TileSheets\\BuffsIcons",
+			  "IconSpriteIndex": 5,
+    		  "Effects": {
+        		"ForagingLevel": 1.0
+			  },
+    		  "ActionsOnApply": null,
+    		  "CustomFields": null
+			 }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "{{ModId}}_Remove_ForestMagic": {
+                "Id": "{{ModId}}_Remove_ForestMagic",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current {{ModId}}_ForestMagic",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "RemoveBuff {{ModId}}_ForestMagic",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+			  "{{ModId}}_ForestMagic": {
+                "Id": "{{ModId}}_ForestMagic",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current canReadJunimoText, LOCATION_NAME Here Forest Woods Backwoods",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_ForestMagic -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  }
+            }
+        },
+		// 钓鱼强化  //
+		{
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+			 "{{ModId}}_ccFish": {
+			  "DisplayName": "{{i18n: Power.ccFishMail.Name}}",
+    		  "Duration": -2,
+			  "IconTexture": "TileSheets\\BuffsIcons",
+			  "IconSpriteIndex": 1,
+    		  "Effects": {
+        		"FishingLevel": 1.0
+			  },
+    		  "ActionsOnApply": null,
+    		  "CustomFields": null
+			 }
+            }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "{{ModId}}_Remove_ccFish": {
+                "Id": "{{ModId}}_Remove_ccFish",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current {{ModId}}_ccFish",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "RemoveBuff {{ModId}}_ccFish",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+			  "{{ModId}}_ccFish": {
+                "Id": "{{ModId}}_ccFish",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current ccFishTank, !PLAYER_HAS_MAIL Current {{ModId}}_LegendaryFishMail, ANY \"LOCATION_NAME Here Beach, SYNCED_CHOICE day ccFish_key 1 8 1 \" \"LOCATION_NAME Here Mountain, SYNCED_CHOICE day ccFish_key 1 8 2 \" \"LOCATION_NAME Here Town, SYNCED_CHOICE day ccFish_key 1 8 3 \" \"LOCATION_NAME Here IslandSouth, SYNCED_CHOICE day ccFish_key 1 8 4 \" \"LOCATION_NAME Here IslandWest, SYNCED_CHOICE day ccFish_key 1 8 5 \"",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_ccFish -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+			  "{{ModId}}_ccFish2": {
+                "Id": "{{ModId}}_ccFish2",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current ccFishTank, PLAYER_HAS_MAIL Current {{ModId}}_LegendaryFishMail, ANY \"LOCATION_NAME Here Beach, SYNCED_CHOICE day ccFish_key 1 5 1 \" \"LOCATION_NAME Here Mountain, SYNCED_CHOICE day ccFish_key 1 5 2 \" \"LOCATION_NAME Here Town, SYNCED_CHOICE day ccFish_key 1 5 3 \" \"LOCATION_NAME Here IslandSouth, SYNCED_CHOICE day ccFish_key 1 5 4 \" \"LOCATION_NAME Here IslandWest, SYNCED_CHOICE day ccFish_key 1 5 5 \" \"LOCATION_NAME Here Submarine \"",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_ccFish -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  }
+            }
+        },
+		// 布告栏和joja解锁巨大作物   //
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			  "{{ModId}}_GiantCrop": {
+                "Id": "{{ModId}}_GiantCrop",
+                "Trigger": "DayEnding",
+                "Condition": "ANY \"PLAYER_HAS_MAIL Current ccBulletin, \" \"PLAYER_HAS_MAIL Current ccMovieTheaterJoja,PLAYER_HEARTS Current Kent 8 \"",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": true,
+                "Action": "AddMail Current {{ModId}}_GiantCrop received",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+ 			  }
+			}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+            "Fields": {
+                "Cauliflower": {
+                    "Chance": 0.05
+                },
+                "Melon": {
+                    "Chance": 0.05
+                },
+                "Pumpkin": {
+                    "Chance": 0.05
+                },
+                "Powdermelon": {
+                    "Chance": 0.03
+                }
+            },
+			"When": {
+				"HasFlag": "{{ModId}}_GiantCrop"
+			}		
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+			"TargetField": [ "Cauliflower", "HarvestItems", "(O)190"],
+            "Entries": {
+                "MinStack": 18,
+                "MaxStack": 25
+            },
+			"When": {
+				"HasFlag": "{{ModId}}_GiantCrop"
+			}		
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+			"TargetField": [ "Melon", "HarvestItems", "(O)254"],
+            "Entries": {
+                "MinStack": 18,
+                "MaxStack": 25
+            },
+			"When": {
+				"HasFlag": "{{ModId}}_GiantCrop"
+			}		
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+			"TargetField": [ "Pumpkin", "HarvestItems", "(O)276"],
+            "Entries": {
+                "MinStack": 18,
+                "MaxStack": 25
+            },
+			"When": {
+				"HasFlag": "{{ModId}}_GiantCrop"
+			}		
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+			"TargetField": [ "Powdermelon", "HarvestItems", "(O)Powdermelon"],
+            "Entries": {
+                "MinStack": 21,
+                "MaxStack": 25
+            },
+			"When": {
+				"HasFlag": "{{ModId}}_GiantCrop"
+			}		
+        },
+		// 持久雕像buff  //
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+ 			  "{{ModId}}_dwarfStatue_0_Mail": {
+  			    "Id": "{{ModId}}_dwarfStatue_0_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current dwarfStatue_0, !PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_dwarfStatue_0_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_dwarfStatue_0_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_dwarfStatue_0_Mail": {
+  			    "Id": "{{ModId}}_Remove_dwarfStatue_0_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_dwarfStatue_0_Mail",
+                        "MarkActionApplied Current {{ModId}}_dwarfStatue_0_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+			  "{{ModId}}_dwarfStatue_0_Buff": {
+                "Id": "{{ModId}}_dwarfStatue_0_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff dwarfStatue_0 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_dwarfStatue_1_Mail": {
+  			    "Id": "{{ModId}}_dwarfStatue_1_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current dwarfStatue_1, !PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_dwarfStatue_1_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_dwarfStatue_1_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_dwarfStatue_1_Mail": {
+  			    "Id": "{{ModId}}_Remove_dwarfStatue_1_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_dwarfStatue_1_Mail",
+                        "MarkActionApplied Current {{ModId}}_dwarfStatue_1_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+			  "{{ModId}}_dwarfStatue_1_Buff": {
+                "Id": "{{ModId}}_dwarfStatue_1_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff dwarfStatue_1 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_dwarfStatue_2_Mail": {
+  			    "Id": "{{ModId}}_dwarfStatue_2_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current dwarfStatue_2, !PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_dwarfStatue_2_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_dwarfStatue_2_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_dwarfStatue_2_Mail": {
+  			    "Id": "{{ModId}}_Remove_dwarfStatue_2_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_dwarfStatue_2_Mail",
+                        "MarkActionApplied Current {{ModId}}_dwarfStatue_2_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+			  "{{ModId}}_dwarfStatue_2_Buff": {
+                "Id": "{{ModId}}_dwarfStatue_2_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff dwarfStatue_2 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_dwarfStatue_3_Mail": {
+  			    "Id": "{{ModId}}_dwarfStatue_3_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current dwarfStatue_3, !PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_dwarfStatue_3_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_dwarfStatue_3_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_dwarfStatue_3_Mail": {
+  			    "Id": "{{ModId}}_Remove_dwarfStatue_3_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_dwarfStatue_3_Mail",
+                        "MarkActionApplied Current {{ModId}}_dwarfStatue_3_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_dwarfStatue_3_Buff": {
+                "Id": "{{ModId}}_dwarfStatue_3_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff dwarfStatue_3 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_dwarfStatue_4_Mail": {
+  			    "Id": "{{ModId}}_dwarfStatue_4_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current dwarfStatue_4, !PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_dwarfStatue_4_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_dwarfStatue_4_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_dwarfStatue_4_Mail": {
+  			    "Id": "{{ModId}}_Remove_dwarfStatue_4_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_dwarfStatue_4_Mail",
+                        "MarkActionApplied Current {{ModId}}_dwarfStatue_4_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_dwarfStatue_4_Buff": {
+                "Id": "{{ModId}}_dwarfStatue_4_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_dwarfStatue_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff dwarfStatue_4 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_0_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_0_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_0, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_0_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_0_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_0_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_0_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_0_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_0_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_0_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_0_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_0_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff statue_of_blessings_0 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_1_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_1_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_1, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_1_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_1_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_1_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_1_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_1_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_1_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_1_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_1_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_1_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff statue_of_blessings_1 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_2_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_2_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_2, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_2_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_2_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_2_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_2_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_2_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_2_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_2_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_2_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_2_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff statue_of_blessings_2 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_3_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_3_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_3, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_3_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_3_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_3_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_3_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_3_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_3_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_3_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_3_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_3_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_ccFish -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_4_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_4_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_4, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_4_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_4_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_4_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_4_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_4_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_4_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_4_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_4_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_4_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_ForestMagic -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_5_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_5_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_5, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_5_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_5_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_5_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_5_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_5_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_5_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_5_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_5_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_5_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_5_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_5_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff {{ModId}}_Speedbuff -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  },
+ 			  "{{ModId}}_statue_of_blessings_6_Mail": {
+  			    "Id": "{{ModId}}_statue_of_blessings_6_Mail",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_BUFF Current statue_of_blessings_6, !PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_6_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "AddMail Current {{ModId}}_statue_of_blessings_6_Mail received",
+                        "MarkActionApplied Current {{ModId}}_Remove_statue_of_blessings_6_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+ 			    },
+ 			  "{{ModId}}_Remove_statue_of_blessings_6_Mail": {
+  			    "Id": "{{ModId}}_Remove_statue_of_blessings_6_Mail",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_6_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": null,
+                "Actions": [
+                        "RemoveMail Current {{ModId}}_statue_of_blessings_6_Mail",
+                        "MarkActionApplied Current {{ModId}}_statue_of_blessings_6_Mail false"
+                    ],
+                "CustomFields": null,
+                "MarkActionApplied": true
+			    },
+			  "{{ModId}}_statue_of_blessings_6_Buff": {
+                "Id": "{{ModId}}_statue_of_blessings_6_Buff",
+                "Trigger": "LocationChanged",
+                "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_statue_of_blessings_6_Mail",
+                "SkipPermanentlyCondition": null,
+                "HostOnly": false,
+                "Action": "AddBuff statue_of_blessings_6 -2",
+                "Actions": null,
+                "CustomFields": null,
+                "MarkActionApplied": false
+			  }
+            }
+        }
+    ]
+}

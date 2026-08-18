@@ -1,0 +1,534 @@
+{
+    "Changes": [
+		//怪物杀手奖励，火山精灵奖励替换为热咖啡戒指//
+        {
+            "Action": "EditData",
+            "Target": "Data/MonsterSlayerQuests",
+            "Fields": {
+                "DustSpirits": {
+                    "Count": 300
+                },
+				"Slimes": {
+                    "Count": 750
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/MonsterSlayerQuests",
+            "Entries": {
+				  "FlameSpirits": {
+				    "DisplayName": "[LocalizedText Strings\\\\Locations:AdventureGuild_KillList_MagmaSprite]",
+				    "Targets": [
+				      "Magma Sprite",
+				      "Magma Sparker"
+				    ],
+				    "Count": 100,
+				    "RewardItemId": "(O)860",
+				    "RewardDialogue": null,
+				    "RewardDialogueFlag": null,
+				    "RewardFlagAll": null
+                },
+                "MonsterKiller1": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller1}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 500,
+                    "RewardItemId": null,
+                    "RewardItemPrice": -1,
+                    "RewardDialogue": "{{i18n: Gil_Telephone_MonsterKiller}}",
+                    "RewardDialogueFlag": "Gil_Telephone",
+                    "RewardFlag": null,
+                    "RewardFlagAll": "Gil_Telephone",
+                    "RewardMail": null,
+                    "RewardMailAll": null,
+                    "CustomFields": null
+                },
+                "MonsterKiller2": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller2}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 1000,
+                    "RewardItemId":  "(O)PrizeTicket",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller3": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller3}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 1500,
+                    "RewardItemId":  "(BC)275",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller4": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller4}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 2000,
+                    "RewardItemId":  "(O)PrizeTicket",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller5": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller5}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 2500,
+                    "RewardItemId":  "(O){{ModId}}_Book_Green_Tea",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller6": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller6}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 3000,
+                    "RewardItemId":  "(O)PrizeTicket",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller7": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller7}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 3500,
+                    "RewardItemId":  "(H)36",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller8": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller8}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 4000,
+                    "RewardItemId":  "(O)PrizeTicket",
+                    "RewardItemPrice": -1
+                },
+                "MonsterKiller9": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller9}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 4500,
+                    "RewardItemId":  "(O)909",
+                    "RewardItemPrice": -1,
+					"RewardItemCount": 7
+                },
+                "MonsterKiller10": {
+					"DisplayName": "{{i18n: AdventureGuild_KillList_MonsterKiller10}}",
+					"Targets": [
+                      "Green Slime",
+                      "Frost Jelly",
+                      "Sludge",
+                      "Tiger Slime",
+                      "Shadow Guy",
+                      "Shadow Shaman",
+                      "Shadow Brute",
+                      "Shadow Sniper",
+                      "Bat",
+                      "Frost Bat",
+                      "Lava Bat",
+                      "Iridium Bat",
+                      "Skeleton",
+                      "Skeleton Mage",
+                      "Grub",
+                      "Fly",
+                      "Bug",
+                      "Duggy",
+                      "Magma Duggy",
+                      "Dust Spirit",
+                      "Rock Crab",
+                      "Lava Crab",
+                      "Iridium Crab",
+                      "Mummy",
+                      "Pepper Rex",
+                      "Serpent",
+                      "Royal Serpent",
+                      "Magma Sprite",
+                      "Magma Sparker"
+                    ],
+                    "Count": 5000,
+                    "RewardItemId":  "(O)PrizeTicket",
+                    "RewardItemPrice": -1
+                }
+            }
+        },
+		//博物馆奖励//
+        {
+            "Action": "EditData",
+            "Target": "Data/MuseumRewards",
+            "Entries": {
+                "museum15": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 15
+                      }
+                  ],
+                  "RewardItemId": "(O)395",
+                  "RewardItemCount": 5,
+                  "FlagOnCompletion": true
+                },
+                "museum35": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 35
+                      }
+                  ],
+                  "RewardItemId": null,
+                  "RewardItemCount": 1,
+                  "RewardActions": [
+                    "MarkEventSeen Host 295672"
+                  ],
+                  "FlagOnCompletion": true,
+                  "CustomFields": null
+                },
+                "museum45": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 45
+                      }
+                  ],
+                  "RewardItemId": "(O)PrizeTicket",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true
+                },
+                "museum55": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 55
+                      }
+                  ],
+                  "RewardItemId": "(BC)90",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true,
+                },
+                "museum60": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 60
+                      }
+                  ],
+                  "RewardItemId": "(O)253",
+                  "RewardItemCount": 3,
+                  "FlagOnCompletion": true
+                },
+                "museum65": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 65
+                      }
+                  ],
+                  "RewardItemId": "(O)490",
+                  "RewardItemCount": 9,
+                  "FlagOnCompletion": true,
+                },
+                "museum70": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 70
+                      }
+                  ],
+                  "RewardItemId": "(BC)275",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true
+                },
+                "museum75": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 75
+                      }
+                  ],
+                  "RewardItemId": "(O){{ModId}}_Book_Ore_Catalogue",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true
+                },
+                "museum85": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "",
+                        "Count": 85
+                      }
+                  ],
+                  "RewardItemId": "(O)166",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true
+                },
+                "mineral13": {
+                  "TargetContextTags": [
+                      {
+                        "Tag": "item_type_minerals",
+                        "Count": 3
+                      }
+                  ],
+                  "RewardItemId": "(O)243",
+                  "RewardItemCount": 1,
+                  "FlagOnCompletion": true
+                }
+            }
+        }
+    ]
+}

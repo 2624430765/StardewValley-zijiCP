@@ -1,0 +1,12 @@
+{
+    "Name": "[CP] NewRecipes by CyberZ",
+    "Author": "CyberZ",
+    "Version": "1.0.3",
+    "Description": "Adding 13 new cooking recipes.",
+    "UniqueID": "CyberZ.NewRecipes",
+    "UpdateKeys": [ "Nexus:23332" ],
+    "MinimumApiVersion": "4.0.0",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

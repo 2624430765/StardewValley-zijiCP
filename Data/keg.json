@@ -1,0 +1,655 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_DoubleKeg": "(BC)12 6 910 1 787 10/Home/{{ModId}}_DoubleKeg/true/"
+      },
+      "LogName": "Double keg recipe definition"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_DoubleKeg": {
+          "Name": "{{ModId}}_DoubleKeg",
+          "DisplayName": "{{i18n: doubleKeg.name}}",
+          "Description": "{{i18n: doubleKeg.description}}",
+          "Price": 125,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": true,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "Mods\\{{ModId}}\\Craftables",
+          "SpriteIndex": 0,
+          "ContextTags": null,
+          "CustomFields": null
+        }
+      },
+      "LogName": "Double keg BC definition"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_DoubleKeg": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            {
+              "Id": "Default_Wheat",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)262",
+                  "RequiredTags": null,
+                  "RequiredCount": 16,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)346",
+                  "ItemId": "(O)346",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 16,
+                  "MaxStack": 16,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 4760,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Hops",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)304",
+                  "RequiredTags": null,
+                  "RequiredCount": 8,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)303",
+                  "ItemId": "(O)303",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 8,
+                  "MaxStack": 8,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 3160,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_TeaLeaves",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)815",
+                  "RequiredTags": null,
+                  "RequiredCount": 5,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)614",
+                  "ItemId": "(O)614",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 5,
+                  "MaxStack": 5,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 150,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_CoffeeBeans",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)433",
+                  "RequiredTags": null,
+                  "RequiredCount": 20,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)395",
+                  "ItemId": "(O)395",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 20,
+                  "MaxStack": 20,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 80,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Honey",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)340",
+                  "RequiredTags": null,
+                  "RequiredCount": 4,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)459",
+                  "ItemId": "(O)459",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 4,
+                  "MaxStack": 4,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 400,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Rice",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)423",
+                  "RequiredTags": null,
+                  "RequiredCount": 1,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "(O)419",
+                  "ItemId": "(O)419",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 2,
+                  "MaxStack": 2,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers": null,
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 100,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Juice",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine_Vegetable",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_vegetable"
+                  ],
+                  "RequiredCount": 12,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Forage",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_greens"
+                  ],
+                  "RequiredCount": 12,
+                  "Condition": "!ITEM_CONTEXT_TAG Input edible_mushroom, ITEM_EDIBILITY Input 1"
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Juice",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "keg_juice"
+                  ],
+                  "RequiredCount": 12,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "FLAVORED_ITEM Juice DROP_IN_ID",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 12,
+                  "MaxStack": 12,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 12680,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            },
+            {
+              "Id": "Default_Wine",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine_Fruit",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "category_fruits"
+                  ],
+                  "RequiredCount": 8,
+                  "Condition": null
+                },
+                {
+                  "Id": "ItemPlacedInMachine_Wine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": null,
+                  "RequiredTags": [
+                    "keg_wine"
+                  ],
+                  "RequiredCount": 8,
+                  "Condition": null
+                }
+              ],
+              "UseFirstValidOutput": false,
+              "OutputItem": [
+                {
+                  "CustomData": null,
+                  "OutputMethod": null,
+                  "CopyColor": false,
+                  "CopyPrice": false,
+                  "CopyQuality": false,
+                  "PreserveType": null,
+                  "PreserveId": null,
+                  "IncrementMachineParentSheetIndex": 0,
+                  "PriceModifiers": null,
+                  "PriceModifierMode": "Stack",
+                  "Condition": null,
+                  "Id": "Default",
+                  "ItemId": "FLAVORED_ITEM Wine DROP_IN_ID",
+                  "RandomItemId": null,
+                  "MaxItems": null,
+                  "MinStack": 8,
+                  "MaxStack": 8,
+                  "Quality": -1,
+                  "ObjectInternalName": null,
+                  "ObjectDisplayName": null,
+                  "ToolUpgradeLevel": -1,
+                  "IsRecipe": false,
+                  "StackModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+                  "StackModifierMode": "Stack",
+                  "QualityModifiers": null,
+                  "QualityModifierMode": "Stack",
+                  "ModData": null,
+                  "PerItemCondition": null
+                }
+              ],
+              "MinutesUntilReady": 12680,
+              "DaysUntilReady": -1,
+              "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+              "RecalculateOnCollect": false
+            }
+          ],
+          "AdditionalConsumedItems": null,
+          "PreventTimePass": null,
+          "ReadyTimeModifiers":[
+                  {
+                	"Id": "Set1Quality",
+                	"Condition": "ITEM_QUALITY Input 1 1",
+                	"Modification": "Multiply",
+                	"Amount": 1.25,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set2Quality",
+                	"Condition": "ITEM_QUALITY Input 2 2",
+                	"Modification": "Multiply",
+                	"Amount": 1.5,
+                	"RandomAmount": null
+                  },
+				  {
+                	"Id": "Set4Quality",
+                	"Condition": "ITEM_QUALITY Input 4 4",
+                	"Modification": "Multiply",
+                	"Amount": 2,
+                	"RandomAmount": null
+                  }
+                ],
+          "ReadyTimeModifierMode": "Stack",
+          "InvalidItemMessage": null,
+          "InvalidItemMessageCondition": null,
+          "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+          "LoadEffects": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Sounds": [
+                {
+                  "Id": "Ship",
+                  "Delay": 0
+                },
+                {
+                  "Id": "bubbles",
+                  "Delay": 0
+                }
+              ]
+            }
+          ],
+          "WorkingEffectChance": 0.33,
+          "AllowLoadWhenFull": false,
+          "WobbleWhileWorking": true,
+          "LightWhileWorking": null,
+          "ShowNextIndexWhileWorking": false,
+          "ShowNextIndexWhenReady": false,
+          "AllowFairyDust": false,
+          "IsIncubator": false,
+          "ClearContentsOvernightCondition": null,
+          "StatsToIncrementWhenLoaded": null,
+          "StatsToIncrementWhenHarvested": [
+            {
+              "RequiredItemId": null,
+              "RequiredTags": null,
+              "StatName": "BeveragesMade"
+            }
+          ],
+          "ExperienceGainOnHarvest": null,
+          "CustomFields": null
+        }
+      },
+      "LogName": "Double keg machine definition"
+    }
+  ]
+}

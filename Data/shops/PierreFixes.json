@@ -1,0 +1,320 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "Fields": {
+                    "(O)472": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)472",
+                    "ItemId": "(O)472"
+                },
+                "(O)473":{            
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)473",
+                    "ItemId": "(O)473"
+                },
+                "(O)474": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)474",
+                    "ItemId": "(O)474"
+                },
+                "(O)475": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)475",
+                    "ItemId": "(O)475"
+                },
+                "(O)427": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)427",
+                    "ItemId": "(O)427"
+                },
+                "(O)477": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)477",
+                    "ItemId": "(O)477"
+                },
+                "(O)429": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)429",
+                    "ItemId": "(O)429"
+                },
+                "(O)476": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)476",
+                    "ItemId": "(O)476"
+                },
+                "(O)273": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)273",
+                    "ItemId": "(O)273"
+                },
+                "(O)479": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)479",
+                    "ItemId": "(O)479"
+                },
+                "(O)480": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)480",
+                    "ItemId": "(O)480"
+                },
+                "(O)481": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)481",
+                    "ItemId": "(O)481"
+                },
+                "(O)482": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)482",
+                    "ItemId": "(O)482"
+                },
+                "WheatSeeds_Summer": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "WheatSeeds_Summer",
+                    "ItemId": "(O)483"
+                },
+                "(O)484": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)484",
+                    "ItemId": "(O)484"
+                },
+                "(O)453": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)453",
+                    "ItemId": "(O)453"
+                },
+                "(O)455": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)455",
+                    "ItemId": "(O)455"
+                },
+                "(O)302": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)302",
+                    "ItemId": "(O)302"
+                },
+                "CornSeeds_Summer": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "CornSeeds_Summer",
+                    "ItemId": "(O)487"
+                },
+                "SunflowerSeeds_Summer": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "SunflowerSeeds_Summer",
+                    "ItemId": "(O)431"
+                },
+                "(O)485": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)485",
+                    "ItemId": "(O)485"
+                },
+                "(O)490": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)490",
+                    "ItemId": "(O)490"
+                },
+                "CornSeeds_Fall": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "CornSeeds_Fall",
+                    "ItemId": "(O)487"
+                },
+                "(O)488": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)488",
+                    "ItemId": "(O)488"
+                },
+                "(O)491": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)491",
+                    "ItemId": "(O)491"
+                },
+                "(O)492": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)492",
+                    "ItemId": "(O)492"
+                },
+                "(O)493": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)493",
+                    "ItemId": "(O)493"
+                },
+                "SunflowerSeeds_Fall": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "SunflowerSeeds_Fall",
+                    "ItemId": "(O)431"
+                },
+                "WheatSeeds_Fall": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "WheatSeeds_Fall",
+                    "ItemId": "(O)483"
+                },
+                "(O)425": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)425",
+                    "ItemId": "(O)425"
+                },
+                "(O)299": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)299",
+                    "ItemId": "(O)299"
+                },
+                "(O)301": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)301",
+                    "ItemId": "(O)301"
+                },
+                "(O)489": {
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)489",
+                    "ItemId": "(O)489"
+                },
+                "GrassStarter": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "GrassStarter",
+                    "ItemId": "(O)297"
+                },
+                "GrassStarter_Recipe": {
+                    "Price": 1000,
+                    "Id": "GrassStarter_Recipe",
+                    "ItemId": "(O)297",
+                    "IsRecipe": true
+                },
+                "(O)245": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)245",
+                    "ItemId": "(O)245"
+                },
+                "(O)246": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)246",
+                    "ItemId": "(O)246"
+                },
+                "(O)423": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)423",
+                    "ItemId": "(O)423"
+                },
+                "(O)247": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)247",
+                    "ItemId": "(O)247"
+                },
+                "(O)419": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)419",
+                    "ItemId": "(O)419"
+                },
+                "(O)368": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)368",
+                    "ItemId": "(O)368"
+                },
+                "(O)370": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)370",
+                    "ItemId": "(O)370"
+                },
+                "(O)465": {
+                    "Price": 100,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)465",
+                    "ItemId": "(O)465"
+                },
+                "(O)369": {
+                    "Price": 150,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)369",
+                    "ItemId": "(O)369"
+                },
+                "(O)371": {
+                    "Price": 150,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)371",
+                    "ItemId": "(O)371"
+                },
+                "(O)466": {
+                    "Price": 150,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)466",
+                    "ItemId": "(O)466"
+                },
+                "(F)1308": {
+                    "Price": 30000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(F)1308",
+                    "ItemId": "(F)1308"
+                },
+                "(O)628": {
+                    "Price": 3400,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)628",
+                    "ItemId": "(O)628"
+                },
+                "(O)629": {
+                    "Price": 2000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)629",
+                    "ItemId": "(O)629"
+                },
+                "(O)630": {
+                    "Price": 4000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)630",
+                    "ItemId": "(O)630"
+                },
+                "(O)631": {
+                    "Price": 6000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)631",
+                    "ItemId": "(O)631"
+                },
+                "(O)632": {
+                    "Price": 6000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)632",
+                    "ItemId": "(O)632"
+                },
+                "(O)633": {
+                    "Price": 4000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)633",
+                    "ItemId": "(O)633"
+                },
+                "(BC)Dehydrator (Recipe)": {
+                    "Price": 10000,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(BC)Dehydrator (Recipe)",
+                    "ItemId": "(BC)Dehydrator"
+                },
+                "(O)458": {
+                    "Price": 200,
+                    "IgnoreShopPriceModifiers": false,
+                    "Id": "(O)458",
+                    "ItemId": "(O)458"
+                },
+                "ITEMS_SOLD_BY_PLAYER SeedShop": {
+                    "Id": "ITEMS_SOLD_BY_PLAYER SeedShop",
+                    "ItemId": "ITEMS_SOLD_BY_PLAYER SeedShop",
+					"PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": 2.0
+                    }
+                    ]
+                }
+            }
+        }
+    ]
+}

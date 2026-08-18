@@ -1,0 +1,2100 @@
+{
+  "Changes": [
+  //SeedShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)472"], //Parsnip Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)473"], //Bean Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)474"], //Cauliflower Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)475"], //Potato Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)427"], //Tulip Bulb
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)477"], //Kale Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)429"], //Jazz Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)476"], //Garlic Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)273"], //Rice Shoot
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)479"], //Melon Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)480"], //Tomato Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)481"], //Blueberry Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  }, 
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)482"], //Pepper Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "WheatSeeds_Summer"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)484"], //Radish Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)453"], //Poppy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)455"], //Spangle Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)302"], //Hops Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "CornSeeds_Summer"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "SunflowerSeeds_Summer"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)485"], //Red Cabbage Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)490"], //Pumpkin Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  }, 
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "CornSeeds_Fall"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)488"], //Eggplant Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)491"], //Bok Choy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)492"], //Yam Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)493"], //Cranberry Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "WheatSeeds_Fall"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "SunflowerSeeds_Fall"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)425"], //Fairy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)299"], //Amaranth Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)301"], //Grape Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)489"], //Artichoke Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "GrassStarter"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 150] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200, 250] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)245"], //Sugar
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)246"], //Wheat Flour
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)423"], //Rice
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)247"], //Oil
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)419"], //Vinegar
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)368"], //Basic Fertilizer
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)370"], //Basic Retaining Soil
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)465"], //Speed-Gro
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)369"], //Quality Fertilizer
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 150] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200, 250] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)371"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 150] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200, 250] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)466"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 150] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200, 250] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)628"], //Cherry Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)629"], //Apricot Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)630"], //Orange Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)631"], //Peach Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)632"], //Pomegranate Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)633"], //Apple Sapling
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 1, 2] }]
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["SeedShop", "Items", "(O)458"], //Bouquet
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 2, 3] }]
+    }
+  },
+  //Joja
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)167"], //Joja Cola
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)472"], //Parsnip Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)473"], //Bean Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)474"], //Cauliflower Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)475"], //Potato Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)427"], //Tulip Bulb
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)477"], //Kale Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)429"], //Jazz Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)479"], //Melon Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)480"], //Tomato Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)482"], //Pepper Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "WheatSeeds_Summer"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)484"], //Radish Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)453"], //Poppy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)455"], //Spangle Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)302"], //Hops Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "SunflowerSeeds_Summer"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)490"], //Pumpkin Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)487"], //Corn Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)488"], //Eggplant Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)491"], //Bok Choy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)492"], //Yam Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)493"], //Cranberry Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "WheatSeeds_Fall"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "SunflowerSeeds_Fall"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)425"], //Fairy Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)299"], //Amaranth Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)301"], //Grape Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [250, 300, 350] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [400, 450, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)297"], //Grass Starter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 150] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200, 250] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)245"], //Sugar
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)246"], //Wheat Flour
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(O)423"], //Rice
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Joja", "Items", "(BC)272"], //Auto-Petter
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  //AdventureShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AdventureShop", "Items", "(O)441"], //Explosive Ammo
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 60, 70, 80] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //AnimalShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(O)178"], //Hay
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [200, 300, 400] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [300, 400, 500] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(BC)104"], //Heater
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["AnimalShop", "Items", "(BC)165"], //Auto-Grabber
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  //Blacksmith
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "CopperOre_YearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "IronOre_YearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "Coal_YearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "GoldOre_YearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "CopperOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "IronOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "Coal_AfterYearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Blacksmith", "Items", "GoldOre_AfterYearOne"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [300, 400, 500] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [500, 600, 700, 800] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //Carpenter
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(O)388"], //Wood
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [500, 600, 700] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [700, 800, 900, 900] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(O)390"], //Stone
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [500, 600, 700] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [700, 800, 900, 900] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(BC)208"], //Workbench
+    "Entries": {
+      "AvailableStock": 1
+    }
+  }, {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "(BC)216"], //Mini-Fridge
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "WoodChipper_BeforeWinterYearOne"],
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Carpenter", "Items", "WoodChipper_AfterYearOne"],
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  //FishShop
+  {    
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)219"], //Trout Soup
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 2, 3] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [3, 4, 5, 4] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)685"], //Bait
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [30, 40, 50, 60] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)DeluxeBait"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [30, 40, 50, 60] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)703"], //Magnet
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [30, 40, 50, 60] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)710"], //Crab Pot
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [1, 2, 3] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [3, 4, 5, 4] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)SonarBobber"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)686"], //Spinner
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)694"], //Trap Bobber
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)692"], //Lead Bobber
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)693"], //Treasure Hunter
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)695"], //Cork Bobber
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)691"], //Barbed Hook
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["FishShop", "Items", "(O)687"], //Dressed Spinner
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //Hospital
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Hospital", "Items", "(O)349"], //Energy Tonic
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Hospital", "Items", "(O)351"], //Muscle Remedy
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //IceCreamStand
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IceCreamStand", "Items", "(O)233"], //Ice Cream
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [3, 4, 5] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [5, 6, 7, 8] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //IslandTrade
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)831"], //Tarot Tuber
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)833"], //Pineapple Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)69"], //Banana Sapling
+    "Entries": {
+      "AvailableStock": 3
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)835"], //Mango Sapling
+    "Entries": {
+      "AvailableStock": 3
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["IslandTrade", "Items", "(O)292"], //Mahogany Seed
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //Raccoon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)292"], //Mahogany Seed
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)CarrotSeeds"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)SummerSquashSeeds"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  }, 
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)BroccoliSeeds"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)PowdermelonSeeds"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)770"], //Mixed Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)872"], //Fairy Dust
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)GoldenMysteryBox"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Raccoon", "Items", "(O)279"], //Magic Rock Candy
+    "Entries": {
+      "AvailableStock": 1
+    }
+  },
+  //ResortBar
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)873"], //Pina Colada
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)346"], //Beer
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)303"], //Pale Ale
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)459"], //Mead
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "(O)612"], //Cranberry Candy
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["ResortBar", "Items", "MangoWine"],
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //Saloon
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)346"], //Beer
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)196"], //Salad
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)216"], //Bread
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)224"], //Spaghetti
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)206"], //Pizza
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Saloon", "Items", "(O)395"], //Coffee
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //Sandy
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)802"], //Cactus Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)478"], //Rhubarb Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)486"], //Starfruit Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)494"], //Beet Seeds
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [100, 150, 200, 250] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [200, 250, 300, 400] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)90"], //Cactus Fruit
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)466"], //Deluxe Speed-Gro
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 125] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)340"], //Honey
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [30, 40, 50] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [50, 55, 60, 65] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)371"], //Quality Retaining Soil
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [50, 100, 125] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [100, 150, 200] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Sandy", "Items", "(O)233"], //Ice Cream
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  },
+  //VolcanoShop
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["VolcanoShop", "Items", "(O)244|(O)237"], //Roots Platter or Super Meal
+    "Entries": {
+      "AvailableStockModifiers": [
+		  { "Modification": "set", 
+		    "RandomAmount": [10, 15, 20, 25] },
+	 	  { "Modification": "set",
+            "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+		    "RandomAmount": [20, 25, 30, 40] }],
+      "AvailableStockModifierMode": "Maximum"
+    }
+  }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+    "Format": "2.7.2",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Shops/CasinoMore.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Shops/Shops.json"
+        },
+		{
+            "Action": "Include",
+            "FromFile": "Data/Shops/Prices.json"
+        },
+		{
+            "Action": "Include",
+            "FromFile": "Data/Shops/PierreFixes.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Shops/Limited.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/MonsterSlayerQuests.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Machines.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/MigicGinger_Parfait",
+            "FromFile": "assets/MigicGinger_Parfait.png"
+        },
+        {
+          "Action": "Load",
+          "Target": "Mods/{{ModId}}/Craftables",
+          "FromFile": "assets/craftables.png"
+        },
+        {
+          "Action": "Include",
+          "FromFile": "data/keg.json"
+        },
+        {
+          "Action": "Include",
+          "FromFile": "data/jar.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Book/Books.json,Data/Book/Powers.json,Data/Book/BookEffects.json"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Mods/{{ModId}}/Craftables",
+            "FromFile": "assets/CraftablesSnow.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "Season": "Winter",
+                "IsOutdoors": "True",
+				"LocationContext |contains= Desert, Island": "false"
+              },
+			"Update": "OnLocationChange"
+        }
+    ]
+}

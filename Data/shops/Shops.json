@@ -1,0 +1,430 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["VolcanoShop", "Items"],
+            "Entries": {
+                "WarpTotemIsland": {
+                    "TradeItemId": "(O)74",
+                    "TradeItemAmount": 1,
+                    "Id": "WarpTotemIsland",
+                    "ItemId": "(O)886"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Raccoon", "Items"],
+            "Entries": {
+                "MFSeedsToMoss": {
+                    "TradeItemId": "(O)MixedFlowerSeeds",
+                    "TradeItemAmount": 1,
+                    "Id": "MFSeedsToMoss",
+                    "ItemId": "(O)Moss"
+                },
+                "SapToClay": {
+                    "TradeItemId": "(O)92",
+                    "TradeItemAmount": 20,
+                    "Id": "SapToClay",
+                    "ItemId": "(O)330"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AdventureShop", "Items"],
+            "Entries": {
+                "DwarfScroll1": {
+                    "TradeItemId": "(O)72",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Monday",
+					"AvailableStock": 1,
+                    "Id": "DwarfScroll1",
+                    "ItemId": "(O)96"
+                },
+                "DwarfScroll2": {
+                    "TradeItemId": "(O)72",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Tuesday",
+					"AvailableStock": 1,
+                    "Id": "DwarfScroll2",
+                    "ItemId": "(O)97"
+                },
+                "DwarfScroll3": {
+                    "TradeItemId": "(O)72",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Wednesday",
+					"AvailableStock": 1,
+                    "Id": "DwarfScroll3",
+                    "ItemId": "(O)98"
+                },
+                "DwarfScroll4": {
+                    "TradeItemId": "(O)72",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Thursday",
+					"AvailableStock": 1,
+                    "Id": "DwarfScroll4",
+                    "ItemId": "(O)99"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["DesertFestival_EggShop", "Items"],
+            "Fields": {
+                "(O)SkillBook_2": {
+                    "AvailableStock": 10,
+					"Condition": "DAY_OF_WEEK Wednesday"
+                },
+				"StrawberrySeeds_Wednesday": {
+                    "AvailableStock": 3,
+					"TradeItemAmount": 50,
+					"ItemId": "(O)879"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "Items"],
+            "Fields": {
+                "(O)286": {
+                    "Price": 300,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          10.0,
+                          20.0,
+                          30.0
+                        ]
+                      }
+                    ]
+                },
+                "(O)287": {
+                    "Price": 600,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          10.0,
+                          15.0,
+                          20.0
+                        ]
+                      }
+                    ]
+                },
+                "(O)288": {
+                    "Price": 1000,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          5.0,
+                          10.0,
+                          15.0
+                        ]
+                      }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Dwarf", "Items"],
+            "Entries": {
+                "(O)773": null,
+                "(O)772": null,
+                "(O)243": null,
+                "DwarfMon": {
+                    "TradeItemId": "(O)96",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Monday",
+                    "Id": "DwarfMon",
+                    "ItemId": "(O)773"
+                },
+                "DwarfTue": {
+                    "TradeItemId": "(O)97",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Tuesday",
+                    "Id": "DwarfTue",
+                    "ItemId": "(O)772"
+                },
+                "DwarfWed": {
+                    "TradeItemId": "(O)98",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Wednesday",
+                    "Id": "DwarfWed",
+                    "ItemId": "(O)243",
+					"Quality": 2
+                },
+                "DwarfThu": {
+                    "TradeItemId": "(O)99",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Thursday",
+                    "Id": "DwarfThu",
+                    "ItemId": "(O)732"
+                },
+                "DwarfFri": {
+                    "TradeItemId": "(O)122",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Friday",
+                    "Id": "DwarfFri",
+                    "ItemId": "(O)787"
+                },
+                "DwarfSat": {
+                    "TradeItemId": "(O)121",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Saturday",
+                    "Id": "DwarfSat",
+                    "ItemId": "(BC)62"
+                },
+                "DwarfSun": {
+                    "TradeItemId": "(H)51",
+                    "TradeItemAmount": 1,
+                    "Condition": "DAY_OF_WEEK Sunday",
+                    "Id": "DwarfSun",
+                    "ItemId": "(O)909",
+					"MinStack": 3
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["VolcanoShop", "Items"],
+            "Fields": {
+                "(O)286": {
+                    "Price": 300,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          30.0,
+                          40.0,
+                          50.0
+                        ]
+                      }
+                    ]
+                },
+                "(O)287": {
+                    "Price": 600,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          20.0,
+                          30.0,
+                          40.0
+                        ]
+                      }
+                    ]
+                },
+                "(O)288": {
+                    "Price": 1000,
+                    "AvailableStockModifiers": [
+                      {
+                        "Id": "Range",
+                        "Condition": null,
+                        "Modification": "Set",
+                        "Amount": 0.0,
+                        "RandomAmount": [
+                          10.0,
+                          20.0,
+                          30.0
+                        ]
+                      }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["BooksellerTrade", "Items"],
+            "Fields": {
+                "(O)CaveJelly|(O)RiverJelly|(O)SeaJelly": {
+                    "ItemId": "(O)CaveJelly",
+                    "RandomItemId": null
+                },
+                "(BC)158|(BC)156": {
+                    "ItemId": "(O)909",
+                    "TradeItemAmount": 1,
+                    "MinStack": 3,
+                    "RandomItemId": null
+                },
+                "(O)226|(O)275": {
+                    "ItemId": "(O)275",
+                    "RandomItemId": null
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Traveler", "Items"],
+            "Fields": {
+                "(O)SkillBook_0|(O)SkillBook_1|(O)SkillBook_2|(O)SkillBook_3|(O)SkillBook_4": {
+                    "AvailableStock": 3
+                },
+				"(O)347": {
+                    "AvailableStock": 3,
+					"Condition": "SEASON spring summer, !DAY_OF_WEEK Friday"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Traveler", "Items"],
+            "Entries": {
+                "(O)347redseed": {
+                    "TradeItemId": "(O)797",
+                    "TradeItemAmount": 1,
+					"Id": "(O)347redseed",
+                    "ItemId": "(O)347",
+					"Condition": "DAY_OF_WEEK Sunday"
+                },
+                "(BC)272": {
+                    "Price": 70000,
+					"Id": "(BC)272",
+                    "ItemId": "(BC)272",
+                    "AvailableStock": 1,
+					"Condition": "IS_COMMUNITY_CENTER_COMPLETE"
+                },
+                "(BC)275": {
+                    "Price": 50000,
+					"Id": "(BC)275",
+                    "ItemId": "(BC)275",
+                    "AvailableStock": 1,
+					"Condition": "DAY_OF_MONTH 28"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Sandy", "Items"],
+            "Entries": {
+                "(O)465": {
+                    "Price": 45,
+                    "AvailableStock": 10,
+                    "Condition": "SEASON spring",
+                    "Id": "(O)465",
+                    "ItemId": "(O)465"
+                },
+                "(O)745": {
+                    "Price": 120,
+                    "Condition": "YEAR 2",
+                    "Id": "(O)745",
+                    "ItemId": "(O)745",
+					"AvailableStockModifiers": [
+					{ "Modification": "set", 
+					    "RandomAmount": [200, 250, 300] },
+					{ "Modification": "set",
+					    "Condition": "PLAYER_STAT Current Book_PriceCatalogue 1",		  
+					    "RandomAmount": [300, 350, 400] }],
+					"AvailableStockModifierMode": "Maximum"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["IslandTrade", "Items"],
+            "Entries": {
+                "{{ModId}}_MigicGinger_Recipe":{
+                    "TradeItemId": "(O)852",
+                    "TradeItemAmount": 5,
+                    "Id": "{{ModId}}_MigicGinger_Recipe",
+                    "ItemId": "{{ModId}}_MigicGinger",
+                    "IsRecipe": true
+                },
+                "(O)928":{
+                    "TradeItemId": "(O)896",
+                    "TradeItemAmount": 20,
+                    "Id": "(O)928",
+                    "ItemId": "(O)928"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Fields": {
+                "(O)298": {
+                    "AvailableStock": 100
+                },
+                "(O)688": {
+                    "AvailableStock": 100
+                },
+                "(O)703": {
+                    "AvailableStock": 100
+                },
+                "(O)893": {
+                    "AvailableStock": 100
+                },
+                "(O)894": {
+                    "AvailableStock": 100
+                },
+                "(O)895": {
+                    "AvailableStock": 100
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {
+                "(O)693": {
+                    "Price": 4000, 
+					"AvailableStock": 20,
+                    "Id": "(O)693",
+                    "ItemId": "(O)693"
+                },
+                "(H)38": {
+                    "Price": 10000, 
+                    "Id": "(H)38",
+                    "ItemId": "(H)38"
+                },
+                "(H)37": {
+                    "Price": 10000, 
+                    "Id": "(H)37",
+                    "ItemId": "(H)37"
+                },
+                "(H)65": {
+                    "Price": 10000, 
+                    "Id": "(H)65",
+                    "ItemId": "(H)65"
+                },
+                "(H)83": {
+                    "Price": 10000, 
+                    "Id": "(H)83",
+                    "ItemId": "(H)83"
+                }
+            }
+        }
+    ]
+}

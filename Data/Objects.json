@@ -1,0 +1,283 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "Migic Ginger": "(O)614 5 (O)903 1 (O)852 1/25 25/{{ModId}}_MigicGinger/l 100"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                  "Hopper": "709 30 910 1 337 3 74 1 787 4/Home/275/true/null/",
+				  "Wild Seeds (Sp)": "16 1 18 1 20 1 22 1/Field/495 10/false/default/[LocalizedText Strings\\Objects:CraftingRecipe_SpringSeeds]",
+				  "Heavy Tapper": "(BC)105 1 910 1 709 30/Home/264/true/null/",
+				  "Heavy Furnace": "(BC)13 5 910 1 /Home/HeavyFurnace/true/l 2/"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["QiGemShop", "Items"],
+            "Fields": {
+                "(BC)275": {
+                    "TradeItemAmount": 30,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_MigicGinger": {
+                    "Name": "Migic Ginger",
+                    "DisplayName": "{{i18n: Cooking.MigicGinger.Name}}",
+                    "Description": "{{i18n: Cooking.MigicGinger.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 750,
+                    "Texture": "Mods/{{ModId}}/MigicGinger_Parfait",
+                    "SpriteIndex": 0,
+                    "Edibility": 120,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 750,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 5.0
+                            }
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "444": {
+                    "Price": 450
+                },
+                "446": {
+                    "Price": 700
+                },
+                "426": {
+                    "Price": 480
+                },
+                "789": {
+                    "Price": 500
+                },
+                "802": {
+                    "Price": 75
+                },
+                "96": {
+                    "Price": 100
+                },
+                "97": {
+                    "Price": 100
+                },
+                "98": {
+                    "Price": 100
+                },
+                "99": {
+                    "Price": 100
+                },
+                "163": {
+                    "Price": 2000
+                },
+                "900": {
+                    "Price": 1600
+                },
+                "898": {
+                    "Price": 1200
+                },
+                "899": {
+                    "Price": 720
+                },
+                "902": {
+                    "Price": 800
+                },
+                "901": {
+                    "Price": 800
+                },
+                "287": {
+                    "Price": 75
+                },
+                "288": {
+                    "Price": 100
+                },
+                "417": {
+                    "Price": 5000,
+					"ContextTags": [
+					  "color_red",
+					  "seedmaker_banned"
+					]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": ["732", "Buffs", "Food"],
+            "Entries": {
+                "Duration": 720,
+                "CustomAttributes": {
+                    "FarmingLevel": 0.0,
+                    "FishingLevel": 1.0,
+                    "MiningLevel": 1.0,
+                    "LuckLevel": 0.0,
+                    "ForagingLevel": 0.0,
+                    "MaxStamina": 0.0,
+                    "MagneticRadius": 0.0,
+                    "Speed": 1.2,
+                    "Defense": 0.0,
+                    "Attack": 0.0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": ["243", "Buffs", "Food"],
+            "Entries": {
+                "CustomAttributes": {
+                    "FarmingLevel": 0.0,
+                    "FishingLevel": 0.0,
+                    "MiningLevel": 3.0,
+                    "LuckLevel": 0.0,
+                    "ForagingLevel": 0.0,
+                    "MaxStamina": 0.0,
+                    "MagneticRadius": 0.0,
+                    "Speed": 0.5,
+                    "Defense": 0.0,
+                    "Attack": 0.0
+                }
+            }
+        },
+		//商店开门时间
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+		    "MapTiles": [
+				{
+					"Position": { "X": 94, "Y": 81 },
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "LockedDoorWarp 5 19 Blacksmith 630 1830" },
+				},
+				{
+					"Position": { "X": 95, "Y": 50 },
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "LockedDoorWarp 13 29 JojaMart 600 2530" },
+				},
+				{
+					"Position": { "X": 96, "Y": 50 },
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "LockedDoorWarp 13 29 JojaMart 600 2530" },
+				}
+			]
+	    },
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+		    "MapTiles": [
+				{
+					"Position": { "X": 6, "Y": 51 },
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "LockedDoorWarp 4 9 SandyHouse 600 2530" },
+				}
+			]
+	    },
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+		    "MapTiles": [
+				{
+					"Position": { "X": 6, "Y": 51 },
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "LockedDoorWarp 4 9 SandyHouse 600 2530" },
+				}
+			]
+	    },
+		//动物生产
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			"TargetField": ["Duck" ],
+            "Entries": {
+                "DaysToProduce": 1
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			"TargetField": ["Rabbit" ],
+            "Entries": {
+                "DaysToProduce": 2
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			"TargetField": ["Dinosaur" ],
+            "Entries": {
+                "DaysToProduce": 2
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+			"TargetField": ["Ostrich" ],
+            "Entries": {
+                "DaysToProduce": 3
+            }
+        },
+		//鱼塘建筑
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+			"TargetField": ["Fish Pond" ],
+            "Entries": {
+                "BuildMaterials": [
+                  {
+                    "ItemId": "(O)390",
+                    "Amount": 200
+                  },
+                  {
+                    "ItemId": "(O)330",
+                    "Amount": 50
+                  },
+                  {
+                    "ItemId": "(O)334",
+                    "Amount": 10
+                  }
+				]
+            }
+        }
+    ]
+
+}
